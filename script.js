@@ -1,7 +1,4 @@
 function calculateTaxes(income) {
-    if (!Number.isFinite(income)) {
-        throw new Error('BAD INCOME')
-    }
     if (income > 30000) {
         return income * 0.25
     }
@@ -9,3 +6,5 @@ function calculateTaxes(income) {
         return income * 0.15
     }
 }
+
+console.log(calculateTaxes(500))
