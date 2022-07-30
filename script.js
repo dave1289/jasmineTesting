@@ -1,3 +1,7 @@
+const input = document.getElementById('username')
+let usernames = [];
+
+
 function calculateTaxes(income) {
     if (!Number.isFinite(income)){
         throw new Error('Invalid income!')
@@ -27,4 +31,9 @@ function remove(arr, val) {
     return arr.filter((el) => {
         el !== val;
     })
+}
+
+
+function submitUser(){
+    usernames.push(input.value);
 }
